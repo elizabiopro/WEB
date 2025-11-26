@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect to GitHub</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .redirect-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #24292e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .redirect-button:hover {
+            background-color: #0a0c0d;
+        }
+    </style>
+</head>
+<body>
+    <button class="redirect-button" onclick="redirectToGitHub()">Go to GitHub Repository</button>
+
+    <script>
+        function redirectToGitHub() {
+            window.location.href = "https://github.com/elizabiopro/WEB/tree/main";
+        }
+    </script>
+</body>
+</html>
